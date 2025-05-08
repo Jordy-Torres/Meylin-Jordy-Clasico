@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Vamos al Clásico?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>¿Quieres ver el Barcelona vs Real Madrid conmigo?</h1>
+    <img src="clasico.jpg" alt="Clásico Barcelona vs Real Madrid" class="cute-img">
+    <p><strong>📅 Domingo 11 de mayo<br>🕥 Hora: 10:15 AM (Hora New York)<br>🎉 Anfitrión: Jordy Torres</strong></p>
+    <div class="buttons">
+      <button onclick="respuestaUno()">¡Sí quiero!</button>
+      <button onclick="respuestaDos()">¡Claro que sí!</button>
+    </div>
+    <p id="response"></p>
+  </div>
+
+  <script>
+    function respuestaUno() {
+      document.getElementById("response").innerText = "💖 M + J 💖";
+    }
+
+    function respuestaDos() {
+      document.getElementById("response").innerText = "TE AMO 💘";
+    }
+  </script>
+</body>
+</html>
